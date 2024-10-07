@@ -1,0 +1,8 @@
+function lucasRecursive(n) {
+    if (n === 0) return 2;
+    if (n === 1) return 1;
+    return lucasRecursive(n - 1) + lucasRecursive(n - 2);
+}
+
+// Test the recursive function
+console.log(lucasRecursive(10)); // Output: 123
